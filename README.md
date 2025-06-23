@@ -1,21 +1,21 @@
-# 🚦 LangGraph Traffic AI Agent
+#  LangGraph Traffic AI Agent
 
 This project implements a **real-time intelligent traffic control system** using [LangGraph](https://github.com/langchain-ai/langgraph), OpenCV, and a lightweight machine learning model. The system analyzes traffic from video feeds, predicts congestion, estimates commute time between two points, and dynamically controls traffic lights via Arduino.
 
 ---
 
-## 📌 Features
+##  Features
 
-- 🔁 **Cyclic AI agent** using LangGraph to continuously analyze and react.
-- 🎥 **Video-based vehicle detection** from 4 lanes.
-- 📊 **ML-based commute time prediction** using real-time vehicle counts.
-- 🤖 **Arduino traffic light control** via serial communication.
-- 🧠 **Learning system** that improves commute estimation over time.
-- 💾 **Persistent state memory** using SQLite.
+- **Cyclic AI agent** using LangGraph to continuously analyze and react.
+- **Video-based vehicle detection** from 4 lanes.
+- **ML-based commute time prediction** using real-time vehicle counts.
+- **Arduino traffic light control** via serial communication.
+- **Learning system** that improves commute estimation over time.
+- **Persistent state memory** using SQLite.
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 The agent cycles through the following tasks:
 
@@ -40,14 +40,14 @@ The agent cycles through the following tasks:
 
 ---
 
-## 📁 Main File: `traffic_ai_agent.py`
+## Main File: `traffic_ai_agent.py`
 
 This script contains:
 
-- 📦 **State Management**: `TrafficState` tracks counts, video paths, and commute times.
-- 🧠 **Agent Nodes**: Defined for analysis, prediction, estimation, control, and learning.
-- 🔄 **LangGraph Workflow**: Configured as a cyclic graph with persistent memory.
-- 🔌 **Execution Loop**: Continuously runs with optional sleep delay.
+- **State Management**: `TrafficState` tracks counts, video paths, and commute times.
+- **Agent Nodes**: Defined for analysis, prediction, estimation, control, and learning.
+- **LangGraph Workflow**: Configured as a cyclic graph with persistent memory.
+- **Execution Loop**: Continuously runs with optional sleep delay.
 
 ---
 
